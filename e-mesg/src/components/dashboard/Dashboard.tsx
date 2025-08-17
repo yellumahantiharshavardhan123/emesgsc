@@ -5,8 +5,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { MessageCircle, Users, User, LogOut } from 'lucide-react';
 import { ChatList } from './ChatList';
-import { StatusList } from './StatusList';
-import { ProfileSettings } from './ProfileSettings';
+import { StatusListNoStorage } from './StatusListNoStorage';
+import { ProfileSettingsNoStorage } from './ProfileSettingsNoStorage';
 import { FeatureShowcase } from '../demo/FeatureShowcase';
 
 interface DashboardProps {
@@ -103,10 +103,10 @@ export const Dashboard: React.FC<DashboardProps> = ({ onChatSelect }) => {
               }} />
             </TabsContent>
             <TabsContent value="status" className="h-full m-0">
-              <StatusList />
+              <StatusListNoStorage />
             </TabsContent>
             <TabsContent value="profile" className="h-full m-0">
-              <ProfileSettings />
+              <ProfileSettingsNoStorage />
             </TabsContent>
           </div>
         </Tabs>

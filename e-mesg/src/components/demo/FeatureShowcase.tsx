@@ -30,9 +30,9 @@ export const FeatureShowcase: React.FC = () => {
     },
     {
       icon: Camera,
-      title: 'Status Stories',
-      description: 'Share moments that disappear in 24 hours',
-      items: ['Text & image posts', 'Auto-deletion', 'View tracking']
+      title: 'Text Status Stories',
+      description: 'Share thoughts that disappear in 24 hours',
+      items: ['Text status updates', 'Auto-deletion', 'View tracking']
     },
     {
       icon: Shield,
@@ -114,7 +114,8 @@ export const FeatureShowcase: React.FC = () => {
             <h3 className="text-xl font-semibold text-gray-900">Ready to Experience E-mesg?</h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
               This is a fully functional messaging app built with React, TypeScript, and Firebase. 
-              Create an account, add some friends, and start chatting in real-time!
+              Create an account, add some friends, and start chatting in real-time! 
+              <span className="text-blue-600 font-medium">Text-only version</span> - no file uploads required.
             </p>
             <div className="flex items-center justify-center space-x-6 text-sm text-gray-500">
               <div className="flex items-center space-x-1">
